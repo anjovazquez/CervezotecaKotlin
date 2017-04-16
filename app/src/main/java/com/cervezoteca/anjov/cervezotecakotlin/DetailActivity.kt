@@ -7,19 +7,20 @@ import kotlinx.android.synthetic.main.activity_detail.*
 class DetailActivity : AppCompatActivity() {
     //estatico, unico todas instancias de esta clase
     companion object {
-        val EXTRA_ID = "DetailActivity:id"
+        val EXTRA_NAME = "DetailActivity:name"
+        val EXTRA_URL = "DetailActivity:url"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val id = intent.getLongExtra(EXTRA_ID, -1)
-        val item = getItems().firstOrNull(){ it.id == id }
+        val name = intent.getStringExtra(EXTRA_NAME)
+        val url = intent.getStringExtra(EXTRA_URL)
 
-        if(item!=null){
-            item_image.loadUrl(item.url)
-            item_title.text = item.title
+        if(url!=null && name !=null){
+            item_image.loadUrl(url)
+            item_title.text = name
         }
     }
 }
