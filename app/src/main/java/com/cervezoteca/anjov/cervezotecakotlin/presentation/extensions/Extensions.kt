@@ -1,4 +1,4 @@
-package com.cervezoteca.anjov.cervezotecakotlin
+package com.cervezoteca.anjov.cervezotecakotlin.presentation.extensions
 
 import android.content.Context
 import android.view.LayoutInflater

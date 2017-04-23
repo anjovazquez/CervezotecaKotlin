@@ -1,7 +1,5 @@
 package com.cervezoteca.anjov.cervezotecakotlin.data
 
-import com.cervezoteca.anjov.cervezotecakotlin.Item
-
 /**
  * Created by anjov on 09/04/2017.
  */

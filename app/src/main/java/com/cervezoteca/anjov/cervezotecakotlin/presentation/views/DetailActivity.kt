@@ -1,7 +1,9 @@
-package com.cervezoteca.anjov.cervezotecakotlin
+package com.cervezoteca.anjov.cervezotecakotlin.presentation.views
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.cervezoteca.anjov.cervezotecakotlin.R
+import com.cervezoteca.anjov.cervezotecakotlin.presentation.extensions.loadUrl
 import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
