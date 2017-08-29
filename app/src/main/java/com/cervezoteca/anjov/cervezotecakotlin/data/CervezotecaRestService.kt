@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface CervezotecaRestService {
 
-    @GET("/api/tap/")
+    @GET("/beers.json")
     fun getTapBeer(): Call<List<TapBeer>>
 
 }

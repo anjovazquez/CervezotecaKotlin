@@ -14,7 +14,7 @@ class RestAPI() {
 
     init {
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://dev.cervezotecamalte.com/")
+                .baseUrl("https://cervezoteca-b09b0.firebaseio.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         cervezotecaAPI = retrofit.create(CervezotecaRestService::class.java)
